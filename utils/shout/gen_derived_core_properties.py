@@ -58,7 +58,7 @@ def unicode_range_to_range(range_str):
 hex_to_int = functools.partial(int, base=16)
 
 def inclusive_range(start, stop=None, step=1):
-	return range_(start, start + 1 if stop is None else stop + 1, step)
+	return range(start, start + 1 if stop is None else stop + 1, step)
 
 def main():
 	with open(here / 'derived_core_properties.py', 'w') as f:
