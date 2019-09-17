@@ -22,8 +22,6 @@ from pathlib import Path
 here = Path(__file__).parent
 properties_path = here / 'DerivedCoreProperties.txt'
 
-# if the amount of shadowing builtins that i do bothers you, please fix your syntax highlighter / linter
-
 def get_derived_core_properties():
 	properties = {}
 
